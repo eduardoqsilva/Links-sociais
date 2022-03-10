@@ -180,6 +180,11 @@ button:hover{
         width: 27px;
     }
 }
+@media(max-height:577px){
+    #footer{
+        display: none;
+    }
+}
 
 @media(max-width:300px){
     #bio{
