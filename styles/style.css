@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{ 
+    /* background-color: rgba(0, 255, 234, 0.322); */
+    width: 85%;
+    height: 100vh;
+    max-width: 577px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.background{
+    background-image: url('../media/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    /* position: relative; */
+}
+#perfil{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding-top: 40px; 
+    display: block;
+}
+#bio{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 29px;
+    text-align: center;
+    color: white;
+}
+
+
+.hello{
+    width: 40px;
+    height: 40px;
+    
+}
+.Profile{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top:20px;
+    margin-bottom: 30px;
+}
+.typed{
+    font-style: normal;
+    font-weight: bold;
+}
+.btn1{
+    background-color: #FAA725;
+}
+.btn2{
+    background-color: #2E2E2E;
+}
+.btn3{
+    background-color: #AE3077;
+}
+.btn4{
+    background-color: #006BA3;
+}
+button.btn4 img{
+    vertical-align: middle;
+}
+button.btn3 img{
+    vertical-align: middle;
+}
+button.btn2 img{
+    vertical-align: middle;
+    padding-bottom: 6px;
+}
+button.btn1 img{
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+p{
+    padding-left: 10px;
+}
+
+
+button{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    border-radius: 15px;
+    border-color: transparent;
+    text-align: center; 
+    margin-bottom: 15px;
+    width: 50%;
+    min-width: 250px;
+}
+
+button > a{  
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+#footer{
+    color: rgba(255, 255, 255, 0.616);
+    text-align: center;
+    margin-top: 40%;
+    
+}
+#footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.616);
+}
+#footer a:hover{
+    color: white;
+}
+
+#btn_{
+    text-align: center;
+}
+button:hover{
+    animation-name:hover_btn;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 20px 10px rgba(217, 1, 255, 0.329);
+}
+
+@media(max-height:740px){
+    #footer{
+        color: rgba(255, 255, 255, 0.616);
+        text-align: center;
+        margin-top: 10%;
+        
+    }
+    #bio{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    button{
+        font-family: 'Roboto', sans-serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
+        border-radius: 15px;
+        border-color: transparent;
+        text-align: center; 
+        margin-bottom: 15px;
+        width: 50%;
+        min-width: 200px;
+        
+    }
+    
+    #perfil{
+        width: 30%;
+        display: block;
+        margin: auto;
+        padding-top: 40px; 
+        display: block;
+}
+}
+
+@media(max-width:300px){
+    #bio{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    button{
+        font-family: 'Roboto', sans-serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
+        border-radius: 15px;
+        border-color: transparent;
+        text-align: center; 
+        margin-bottom: 15px;
+        width: 50%;
+        min-width: 200px;
+        
+    }
+    .hello{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@keyframes  hover_btn{
+
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+    
+}
+
