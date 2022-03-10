@@ -127,6 +127,8 @@ button > a{
 #btn_{
     text-align: center;
 }
+
+
 button:hover{
     animation-name:hover_btn;
     animation-duration: 0.3s;
@@ -160,7 +162,7 @@ button:hover{
         text-align: center; 
         margin-bottom: 15px;
         width: 50%;
-        min-width: 200px;
+        min-width: 230px;
         
     }
     
@@ -170,7 +172,19 @@ button:hover{
         margin: auto;
         padding-top: 40px; 
         display: block;
-}
+    }
+    button.btn4 img{
+        width: 20px;
+    }
+    button.btn3 img{
+        width: 27px;
+    }
+    button.btn2 img{
+        width: 27px;
+    }
+    button.btn1 img{
+        width: 27px;
+    }
 }
 
 @media(max-width:300px){
@@ -191,16 +205,27 @@ button:hover{
         text-align: center; 
         margin-bottom: 15px;
         width: 50%;
-        min-width: 200px;
+        min-width: 230px;
         
     }
     .hello{
         width: 30px;
         height: 30px;
     }
+    button.btn4 img{
+        width: 20px;
+    }
+    button.btn3 img{
+        width: 27px;
+    }
+    button.btn2 img{
+        width: 27px;
+    }
+    button.btn1 img{
+        width: 27px;
+    }
 
 }
-
 @keyframes  hover_btn{
 
     0%{
