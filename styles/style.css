@@ -109,10 +109,10 @@ button > a{
     font-size: 30px;
 }
 
-#footer{
+#footer{ 
     color: rgba(255, 255, 255, 0.616);
     text-align: center;
-    margin-top: 40%;
+    /* margin-top: 40%; */
     
 }
 #footer a{
@@ -123,6 +123,13 @@ button > a{
 #footer a:hover{
     color: white;
 }
+#footer{
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+  }
 
 #btn_{
     text-align: center;
@@ -139,11 +146,14 @@ button:hover{
 }
 
 @media(max-height:740px){
-    #footer{
+    /* #footer{
         color: rgba(255, 255, 255, 0.616);
         text-align: center;
         margin-top: 10%;
         
+    } */
+    #perfil{
+        width: 130px;
     }
     #bio{
         font-family: 'Roboto Mono', monospace;
@@ -166,13 +176,6 @@ button:hover{
         
     }
     
-    #perfil{
-        width: 30%;
-        display: block;
-        margin: auto;
-        padding-top: 40px; 
-        display: block;
-    }
     button.btn4 img{
         width: 20px;
     }
