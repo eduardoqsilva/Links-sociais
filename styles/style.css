@@ -28,7 +28,8 @@
     /* position: relative; */
 }
 #perfil{
-    width: 40%;
+    width: 35%;
+    min-width: 150px;
     display: block;
     margin: auto;
     padding-top: 40px; 
@@ -127,8 +128,9 @@ button > a{
     bottom: 0;
     left: 0;
     height: 40px;
-    position: fixed;
+    position: absolute;
     width: 100%;
+    background-color: transparent;
   }
 
 #btn_{
@@ -152,9 +154,9 @@ button:hover{
         margin-top: 10%;
         
     } */
-    #perfil{
+    /* #perfil{
         width: 130px;
-    }
+    } */
     #bio{
         font-family: 'Roboto Mono', monospace;
         font-size: 20px;
@@ -187,6 +189,13 @@ button:hover{
 }
 
 @media(max-width:300px){
+    
+    .container{
+        width: 100%;
+    }
+    /* #perfil{
+        width: 130px;
+    } */
     #bio{
         font-family: 'Roboto Mono', monospace;
         font-size: 20px;
