@@ -1,0 +1,127 @@
+
+.background-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: #001220;
+}
+.bubble{
+    background: rgb();
+    background: linear-gradient(45deg, rgba(46,63,213,1) 20%, rgba(235,30,156,1) 100%);
+    border-radius: 57% 43% 29% 71% / 35% 32% 68% 65%  ;
+    position: absolute;
+}
+.bubble-wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.bubble-wrapper .bubble:nth-child(1){
+    top: -200px;
+    left: -150px;
+    transform: rotate(180deg);
+    width: 400px;
+    height: 400px;
+
+    filter: blur(41px);
+
+    animation: background-1 48s ease-in-out infinite;
+}
+.bubble-wrapper .bubble:nth-child(2){
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(-60deg);
+    width: 400px;
+    height: 350px;
+
+    filter: blur(41px);
+
+    animation: background-2 48s ease-in-out infinite;
+}
+.bubble-wrapper .bubble:nth-child(3){
+    bottom: -20px;
+    right: 60%;
+    transform: rotate(100deg);
+    width: 250px;
+    height: 250px;
+
+    filter: blur(41px);
+
+    animation: background-1 48s ease-in-out infinite;
+}
+.bubble-wrapper .bubble:nth-child(4){
+    top: 20%;
+    right: -50px;
+    left: 50%;
+    transform: rotate(-90deg);
+    width: 500px;
+    height: 500px;
+    
+    filter: blur(41px);
+
+    animation: background-2 48s ease-in-out infinite;
+}
+.bubble-wrapper .bubble:nth-child(5){
+    top: -100px;
+    right: 100px;
+    transform: rotate(68deg);
+    width: 250px;
+    height: 250px;
+
+    filter: blur(41px);
+
+    animation: background-1 48s ease-in-out infinite;
+}
+
+
+.bubble-wrapper:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+
+}
+
+@keyframes background-1 {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(360deg) scale(1.05);
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+    }
+}
+@keyframes background-2 {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(-360deg) scale(1.05);
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+
+@media (min-width: 1200px ){
+
+    .bubble-wrapper .bubble:nth-child(1){
+        width: 500px;
+        height: 500px;
+    }
+    .bubble-wrapper .bubble:nth-child(2){
+        width: 400px;
+        height: 400px;
+    }
+    .bubble-wrapper .bubble:nth-child(3){
+        width: 400px;
+        height: 400px;
+    }
+ 
+
+}
+
