@@ -9,30 +9,41 @@
     box-sizing: border-box;
 }
 .container{ 
-    /* background-color: rgba(0, 255, 234, 0.322); */
-    width: 85%;
+    width: 100vw;
     height: 100vh;
-    max-width: 577px;
     position: absolute;
     top: 0%;
-    left: 50%;
-    transform: translate(-50%);
+
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
-.background{
-    background-image: url('../media/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    /* position: relative; */
+.wrapper-button{
+    width: 100%;
+    max-width: 500px;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
+#btn_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
 #perfil{
-    width: 35%;
+    width: 100%;
     min-width: 150px;
-    display: block;
-    margin: auto;
-    padding-top: 40px; 
+    max-width: 180px;
     display: block;
 }
 #bio{
@@ -47,13 +58,16 @@
     width: 40px;
     height: 40px;
     
+    position: absolute;
+    top: 0;
+    left: -12px;  
 }
 .Profile{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    padding-top:20px;
-    margin-bottom: 30px;
+    padding: 0 20px;
+
+    position: relative;
 }
 .typed{
     font-style: normal;
@@ -71,168 +85,64 @@
 .btn4{
     background-color: #006BA3;
 }
-button.btn4 img{
-    vertical-align: middle;
-}
-button.btn3 img{
-    vertical-align: middle;
-}
-button.btn2 img{
-    vertical-align: middle;
-    padding-bottom: 6px;
-}
-button.btn1 img{
-    vertical-align: middle;
-    padding-bottom: 3px;
-}
-p{
-    padding-left: 10px;
-}
 
 
 button{
     font-family: 'Roboto', sans-serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /* padding-left: 50px; */
-    /* padding-right: 50px; */
-    border-radius: 15px;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 8px;
     border-color: transparent;
-    text-align: center; 
-    margin-bottom: 15px;
-    width: 50%;
+    
+    width: 100%;
     min-width: 250px;
-}
+    max-width: 250px;
 
-button > a{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+a button{  
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
-
-#footer{ 
-    color: rgba(255, 255, 255, 0.616);
-    text-align: center;
-    /* margin-top: 40%; */
-    
+a button:hover{  
+    transition: ease-in 0.2s;
+    transform: scale(1.03);
 }
-#footer a{
+a button:active{  
+    transition: ease-in 0.2s;
+    transform: scale(0.95);
+}
+
+a{
     text-decoration: none;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.616);
+    color: rgb(255, 255, 255);
 }
-#footer a:hover{
-    color: white;
-}
-#footer{
-    bottom: 0;
-    left: 0;
-    height: 40px;
-    position: absolute;
-    width: 100%;
+
+footer{
     background-color: transparent;
-  }
+    color: #ffff;
+    position: absolute;
+    bottom: 0;
 
-#btn_{
     text-align: center;
+    width: 100%;
+    padding: 10px;
 }
-
-
-button:hover{
-    animation-name:hover_btn;
-    animation-duration: 0.3s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    box-shadow: 0 0 20px 10px rgba(217, 1, 255, 0.329);
-}
-
-@media(max-height:740px){
-    /* #footer{
-        color: rgba(255, 255, 255, 0.616);
-        text-align: center;
-        margin-top: 10%;
-        
-    } */
-    /* #perfil{
-        width: 130px;
-    } */
+ 
+@media (max-width: 500px) {
     #bio{
-        font-family: 'Roboto Mono', monospace;
-        font-size: 20px;
-        text-align: center;
-        color: white;
-    }
-    button{
-        width: 50%;
-        min-width: 250px;
-        
-    }
-    
-    button.btn4 img{
-        width: 20px;
-    }
-    button.btn3 img{
-        width: 27px;
-    }
-    button.btn2 img{
-        width: 27px;
-    }
-    button.btn1 img{
-        width: 27px;
-    }
-}
-@media(max-height:577px){
-    #footer{
-        display: none;
-    }
-}
-
-@media(max-width:300px){
-    
-    .container{
-        width: 100%;
-    }
-    /* #perfil{
-        width: 130px;
-    } */
-    #bio{
-        font-family: 'Roboto Mono', monospace;
-        font-size: 20px;
-        text-align: center;
-        color: white;
-    }
-    button{
-        width: 50%;
-        min-width: 250px;
-        
+        font-size: 25px;
     }
     .hello{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;  
     }
-    button.btn4 img{
-        width: 20px;
+    a button{  
+        font-size: 25px;
     }
-    button.btn3 img{
-        width: 27px;
-    }
-    button.btn2 img{
-        width: 27px;
-    }
-    button.btn1 img{
-        width: 27px;
-    }
-
-}
-@keyframes  hover_btn{
-
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.05);
-    }
-    
 }
 
